@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontera U-Collect</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+</head>
+
+
+<body>
+    
+    <header><img src="img/Logotipo.png" alt="Logo" class="logo"></header>
+    <nav class="topnav" id="mytopnav">
+        <a href="#Deathshot">¡Ofertas!</a>
+        <a href="#Black_Panther">Marvel</a>
+        <a href="#Batman">DC Comics</a>
+        <a href="#Endeavor">Anime</a>
+
+        <a class="icon" onclick="functionNavBar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <div class="carousel">
+            <div class="carousel-container" id="carousel-container">
+                <div class="carousel-item"><img src="img/Ace.webp" alt="Ace"></div>
+                <div class="carousel-item"><img src="img/Catwoman.webp" alt="Catwoman"></div>
+                <div class="carousel-item"><img src="img/Cyborg Superman.webp" alt="Cyborg Superman"></div>
+                <div class="carousel-item"><img src="img/Link.jpg" alt="Link"></div>
+            </div>
+            <div class="controls">
+                <button class="control-btn" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="control-btn" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <section class="personaje" id="Deathshot">
+            <div class="foto"><img src="img/Deathshot.jpg" alt="Deathshot"></div>
+            <div class="texto">
+                <h1>¡OFERTA!</h1> <br> <br>
+                <h2>Deathshot</h2> <br>
+                <p>
+                    ¡Lleva a casa al letal Deathstroke con esta increíble figura de Amazing Yamaguchi! Con 46 puntos de
+                    articulación, un diseño detallado y múltiples accesorios, podrás recrear sus poses más épicas. Alta
+                    calidad, máximo detalle y acción sin límites. ¡No puede faltar en tu colección!
+                </p>
+                <h3 id="tacha">Precio: 2,299$</h3>
+                <h3>Precio: 1,999$</h3>
+            </div>
+        </section>
+        <section class="personaje" id="Black_Panther">
+            <div class="foto"><img src="img/Black_Panther.jpg" alt="Black Panther"></div>
+            <div class="texto">
+
+                <h2>Black Panther</h2> <br>
+                <p>
+                    ¡Lleva la majestuosidad de Wakanda a tu colección con la figura de Black Panther de Amazing
+                    Yamaguchi! Con un diseño increíblemente detallado, múltiples puntos de articulación para poses
+                    dinámicas y accesorios intercambiables, esta figura de 17 cm es perfecta para exhibición o
+                    fotografía. Fabricada en PVC y ABS de alta calidad, captura a la perfección la esencia del
+                    legendario rey T'Challa.
+                </p>
+                <h3>Precio: 2,099$</h3>
+            </div>
+        </section>
+        <section class="personaje" id="Batman">
+            <div class="foto"><img src="img/Batman.jpg" alt="Batman"></div>
+            <div class="texto">
+                <h2>Batman</h2>
+                <p>
+                    ¡Agrega a tu colección al Caballero Oscuro con la figura de Batman de Arkham Knight de Amazing
+                    Yamaguchi! Esta impresionante figura de 17 cm captura a Batman en su icónico traje del videojuego,
+                    con detalles meticulosos y una articulación avanzada que permite recrear sus movimientos más
+                    dinámicos. Fabricada en PVC y ABS de alta calidad, incluye accesorios intercambiables para
+                    personalizar aún más su aspecto. Con una increíble capacidad de pose y un diseño fiel al videojuego,
+                    esta figura es un must-have para los fanáticos de Batman.
+                </p>
+                <h3>Precio: 1,699$</h3>
+            </div>
+        </section>
+        <section class="personaje" id="Endeavor">
+            <div class="foto"><img src="img/Endeavor.webp" alt="Endeavor"></div>
+            <div class="texto">
+                <h2>Endeavor</h2>
+                <p>
+                    ¡Añade a tu colección al imponente Endeavor de Boku no Hero con esta figura de Amazing Yamaguchi!
+                    Con 17 cm de altura, esta figura captura a la perfección la fuerza y determinación del héroe número
+                    uno, mostrando un diseño detallado y una articulación avanzada para lograr poses poderosas y
+                    dinámicas. Fabricada en PVC y ABS de alta calidad, incluye accesorios intercambiables que te
+                    permiten personalizar su apariencia. Ideal para los fanáticos de My Hero Academia, esta figura es
+                    perfecta para exhibición.
+                </p>
+                <h3>Precio: 1,899$</h3>
+            </div>
+        </section>
+    </main> <!--Solo hay un main por pagina web y contiene lo mas importante-->
+    <footer>
+        <div class="social-media">
+            <a href="#" class="social-icon"><img src="img/Facebook_Logo.webp" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="img/Instagram_Logo.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="img/Twitter_Logo.webp" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="img/WhatsApp_Logo.webp" alt="LinkedIn"></a>
+        </div>
+        <div class="textopie">
+            <h2 id="pie">Correo electrónico: al238028@alumnos.uacj.mx</h2>
+        </div>
+    </footer>
+    <script>
+        function functionNavBar(){
+            var x = document.getElementById("mytopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        
+        let index = 0;
+        const container = document.getElementById("carousel-container");
+        const items = document.querySelectorAll(".carousel-item");
+        
+        function moveSlide(step) {
+            index = (index + step + items.length) % items.length;
+            container.style.transform = `translateX(${-index * 100}%)`;
+        }
+        </script>
+        
+</body>
+
+</html>

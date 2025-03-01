@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    background-color: #0B3D91;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+
+.logo {
+    width: 70%;
+    height: 50%;
+    margin-top: 20px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    background-color: #2E2E2E;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    background-color: #0B3D91;
+    color: white;
+    text-decoration: none;
+    font-family: poppins;
+    padding: 5px 20px 4px;
+    display: none;
+    border-radius: 10px;
+}
+
+nav a.icon {
+    align-self: flex-end;
+    display: block;
+    background-color: #2E2E2E;
+    font-size: 30px;
+    padding-top: 1.5%;
+    margin: 0;
+}
+
+.topnav.responsive a {
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative;
+    z-index: 9999;
+}
+
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: #1C1C1C;
+    text-align: center
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #0B3D91;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.texto p {
+    font-size: 20px;
+    color: white;
+}
+
+.texto h2 {
+    background-color: #0B3D91;
+    border-radius: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+#tacha{
+    color: red;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.texto h3{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+.textopie {
+    width: 90%;
+    height: auto;
+    background-color: #4f4f4f;
+    float: left;
+    margin-left: 5%;
+    padding: 7px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+#pie {
+    background-color: #0B3D91;
+    border-radius: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.texto h1 {
+    color: white;
+    text-align: center;
+    background-color: #FF5733;
+    font-size: 40px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+}
+
+.personaje {
+    width: 60%;
+    height: auto;
+    background-color: #2E2E2E;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    padding-bottom: 40px;
+    border-radius: 30px;
+}
+
+.foto {
+    height: 80%;
+    background-color: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.foto img {
+    text-align: center;
+    height: 80%;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.texto {
+    width: 90%;
+    height: auto;
+    background-color: #4f4f4f;
+    float: left;
+    margin-left: 5%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+@media screen and (min-width:1080) {}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 740px) {
+    nav {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav a.icon {
+        display: none;
+        margin: 0;
+        background-color: #0B3D91;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    nav {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        background-color: #2E2E2E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between; 
+        position: relative;
+    }
+
+    nav a {
+        background-color: #0B3D91;
+        color: white;
+        text-decoration: none;
+        font-family: poppins;
+        padding: 5px 20px;
+        display: block;
+        border-radius: 0px;
+    }
+
+    nav a.icon {
+        display: block;
+        background-color: #2E2E2E;
+        font-size: 30px;
+        padding-top: 10px;
+        padding-left: 15px;
+        margin: 0;
+        width: 40px;
+        height: 40px;
+        position: absolute; 
+        left: 10px; 
+    }
+
+    .topnav.responsive a {
+        display: block;
+    }
+
+    .topnav.responsive {
+        width: 100%;
+        background-color: #2E2E2E;
+        padding: 10px 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center; /* Centra los botones en columna */
+    }
+
+    nav a:not(.icon) {
+        background-color: #0B3D91;
+        color: white;
+        text-decoration: none;
+        font-family: poppins;
+        padding: 10px 20px;
+        display: none;
+        width: 200px;
+        text-align: center;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    nav a.icon {
+        width: 40px;
+        height: 40px;
+        font-size: 30px;
+        left: 10px;
+    }
+
+    .texto p {
+        font-size: 14px;
+    }
+
+    .personaje {
+        width: 80%;
+    }
+}
+
+
+.carousel {
+    position: relative;
+    width: 86%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 400px; /* Asegura que cada imagen tenga altura fija */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* Para evitar que la imagen se distorsione */
+    border-radius: 10px;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.control-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.control-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
